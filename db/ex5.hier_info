@@ -1,0 +1,34 @@
+|wrapper_ex5
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= SW[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDG0 <= ex5:dut.f
+
+
+|wrapper_ex5|ex5:dut
+x => x.IN1
+y => y.IN1
+z => z.IN1
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wrapper_ex5|ex5:dut|IC_DECODER_74LS138:dut
+A0 => Decoder0.IN0
+A1 => Decoder0.IN1
+A2 => Decoder0.IN2
+E0 => Decoder0.IN3
+E1 => Decoder0.IN4
+E2 => Decoder0.IN5
+Y0 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Y1 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Y4 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Y5 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Y6 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Y7 <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
